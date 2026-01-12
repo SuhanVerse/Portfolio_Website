@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suhan Khadka Portfolio</title>
+  <meta name="description" content="I’m Suhan Khadka, a B.E. Computer Engineering student from Lalitpur, Nepal, and I love bringing code and circuits together to solve real problems.">
+  <meta name="author" content="Suhan Khadka">
+  <meta name="keywords" content="BCT,Computer Engineering,Robotics,AI">
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/hero.css" />
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/skills.css" />
+  <link rel="stylesheet" href="css/about.css" />
+  <link rel="stylesheet" href="css/sidebar.css" />
+
+</head>
+<body>
+  <nav class="sidebar">
+    <i id="hamburger" class="fa-solid fa-bars sidebar_hamburger"></i>
+
+    <div class="sidebar_content">
+      <ul class="sidebar_list">
+        <li>
+          <a href="#hero">Home</a>
+        </li>
+        <li>
+          <a href="#skills">Skills</a>
+        </li>
+      </ul>
+    </div>
+
+  </nav>
+  <section id="hero">
+    <h1>
+      <img
+        src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=100&color=7158DD&center=false&vCenter=false&width=500&lines=Hi%2C+I%60m+Suhan+Khadka;Robotics+%26+IoT+Explorer;Computer+Engineering+Student"
+        alt="Typing SVG"
+      >
+      <br />
+      I am a Computer Engineering Student
+    </h1>
+    <p>Computer Engineer</p>
+    <button>
+      <span>Contact me</span> <i class="fa-solid fa-envelope"></i>
+    </button>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section">
+  <span class="section__title">my speciality</span>
+  <span class="section__subtitle">my skills</span>
+
+  <div class="skill__box">
+    <div class="skill">
+      <span>C++</span>
+      <div class="skill__percent__box">
+        <div class="skill__percent">
+          <span>85%</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <span>Python</span>
+      <div class="skill__percent__box">
+        <div
+          class="skill__percent"
+          style="width: 80%; background: #ec5453; color: #ec5453"
+        >
+          <span>80%</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <span>Rust</span>
+      <div class="skill__percent__box">
+        <div
+          class="skill__percent"
+          style="width: 75%; background: #f9bf3f; color: #f9bf3f"
+        >
+          <span>75%</span>
+        </div>
+      </div>
+    </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About -->
+
+<section id="about" class="section">
+  <span class="section__title">about us</span>
+  <h2 class="section__subtitle">who am i?</h2>
+
+  <p class="about__description">
+    <strong>I’m Suhan Khadka, </strong>a B.E. Computer Engineering student from Lalitpur, Nepal, and I love bringing code and circuits together to solve real problems.
+
+    My journey so far has focused on embedded systems and smart automation. One of my favorite projects is the All‑in‑One Arduino Robot, which I built to switch smoothly between Bluetooth control, voice commands, obstacle avoidance, and line following. Working on this robot taught me a lot about C/C++, Python, and basic circuit design, and showed me how rewarding hands‑on learning can be.
+
+    I’ve also explored web development through an MERN Stack bootcamp, experimented with UI/UX prototyping in Figma, and tried my hand at Rust and 3D modeling with Autodesk Fusion. Volunteering with the Robotics Association of Nepal for AI for Good 2025 gave me the chance to organize events, learn directly from industry experts, and meet fellow tech enthusiasts.
+
+    I’m always up for a conversation about engineering challenges, IoT ideas, or potential collaborations. Feel free to reach out—I’d love to connect!
+  </p>
+
+  <div class="about__skills">
+    <div class="about__box">
+      <i class="fa-solid fa-robot"></i>
+      <h3>Robotics</h3>
+    </div>
+    <div class="about__box">
+      <i class="fa-solid fa-globe"></i>
+      <h3>Software</h3>
+    </div>
+  </div>
+</section>
+
+<script>
+  const hamburger = document.querySelector("#hamburger");
+
+  hamburger.addEventListener("click", ()=> {
+    hamburger.classList.toggle("sidebar_hamburger_translate");
+  });
+</script>
+<!-- Footer -->
+
+</body>
+</html>
