@@ -33,6 +33,7 @@
   <link rel="stylesheet" href="css/about.css" />
   <link rel="stylesheet" href="css/work_count.css">
   <link rel="stylesheet" href="css/sidebar.css" />
+  <link rel="stylesheet" href="css/contact.css" />
 
 </head>
 <body>
@@ -194,8 +195,59 @@
   </div>
 </section>
 
-
 <!-- Contact -->
+<section id="contact" class="section contact__section">
+  <h2 class="contact__heading">Contact Me!</h2>
+
+  <div class="contact__wrapper">
+    <!-- Left: Contact Form -->
+    <div class="contact__form__box">
+      <form id="contactForm" onsubmit="submitForm(event);">
+        <input type="text" placeholder="Name" id="name" name="name" class="contact__input" />
+        <input type="email" placeholder="Email" id="email" name="email" class="contact__input" />
+        <input type="text" placeholder="Subject" id="subject" name="subject" class="contact__input" />
+        <textarea id="message" name="message" placeholder="Message" class="contact__textarea"></textarea>
+        <button class="contact__button" type="submit">Send Message</button>
+      </form>
+    </div>
+
+    <!-- Right: Info + Social -->
+    <div class="contact__info__box">
+      <div class="contact__info">
+        <p><strong>Email</strong><br />khsuhan100@gmail.com</p>
+        <p><strong>Phone</strong><br />Available on request</p>
+      </div>
+
+      <div class="contact__social">
+        <p><strong>Follow Me!</strong></p>
+        <div class="contact__icons">
+          <a href="https://github.com/SuhanVerse" target="_blank">
+            <img src="assets/icons/Github.svg" alt="GitHub" />
+          </a>
+          <a href="https://www.linkedin.com/in/suhan-khadka/" target="_blank">
+            <img src="assets/icons/Linkedin.svg" alt="LinkedIn" />
+          </a>
+          <a href="https://www.facebook.com/suhan.khadka.35/" target="_blank">
+            <img src="assets/icons/Fb.svg" alt="Facebook" />
+          </a>
+          <a href="https://www.instagram.com/suhan.khadka.30/" target="_blank">
+            <img src="assets/icons/Insta.svg" alt="Instagram" />
+          </a>
+          <a href="https://x.com/ultraman_62" target="_blank">
+            <img src="assets/icons/X.svg" alt="X" />
+          </a>
+          <a href="mailto:khsuhan100@gmail.com">
+            <img src="assets/icons/Gmail.svg" alt="Email" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="contactSuccess" class="contact__success hidden">
+    <p>✔️ Message sent successfully!</p>
+  </div>
+</section>
 
 
 <!-- Animation -->
@@ -237,6 +289,22 @@
   hamburger.addEventListener("click", ()=> {
     hamburger.classList.toggle("sidebar_hamburger_translate");
   });
+</script>
+
+<!-- Form Validation -->
+<script>
+  function submitForm(event) {
+    event.preventDefault();
+
+    setTimeout(() => {
+      document.getElementById("contactSuccess").classList.remove("hidden");
+      document.getElementById("contactForm").reset();
+
+      setTimeout(() => {
+        document.getElementById("contactSuccess").classList.add("hidden");
+      }, 5000);
+    }, 500);
+  }
 </script>
 
 
