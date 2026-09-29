@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://suhankhadka.com.np/sitemap.xml
