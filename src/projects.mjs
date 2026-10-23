@@ -93,7 +93,7 @@ export const projects = [
     status: "App in development",
     image: "edumentx",
     caption: "Concept mockup · Sample content",
-    repo: "EdumentX",
+    repo: "EdumentX-Android",
     tags: ["React Native", "TypeScript", "Firebase"],
     summary:
       "A tutor-discovery app for Nepal, bringing map-based search, tutor profiles, and enrollment workflows into one mobile experience.",
