@@ -2,6 +2,8 @@
 
 A static portfolio connecting robotics, embedded systems and software. Published at **https://suhankhadka.com.np/**.
 
+This repository builds the custom-domain site with esbuild and an optional Three.js scene. [SuhanVerse.github.io](https://github.com/SuhanVerse/SuhanVerse.github.io) is a separate Parcel-based portfolio published at [suhanverse.github.io](https://suhanverse.github.io/); the projects have their own source and publishing paths.
+
 ## Develop and preview
 
 Requires Node.js 20 or later.
